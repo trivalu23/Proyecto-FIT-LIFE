@@ -1,0 +1,22 @@
+/* ==== FLEX CARD ==== */
+.flex-card {
+  flex: 1 1 250px;
+  max-width: 250px;
+}
+
+/* ==== HERO SECTION ==== */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-gradient-start, #bc8cef), var(--primary-gradient-end, #96b9f6));
+  padding: 120px 20px 60px;
+  text-align: center;
+  color: var(--color-titles);
+}
+
+.hero-subtitle {
+  color: var(--color-subtitles);
+}
+
+/* ==== HISTORY SECTION ==== */
+.history-section {
+  background-color: var(--history-bg, rgba(243, 119, 234, 0.593));
+}

@@ -1,0 +1,31 @@
+/* ==== NAVBAR ==== */
+.custom-navbar {
+  background: rgba(155, 93, 229, 0.7); /* morado suave con transparencia */
+  backdrop-filter: blur(8px); /* efecto glass */
+}
+
+
+
+.custom-navbar .nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+}
+
+.navbar-dark .nav-link {
+  background-color: var(--nav-link-bg, rgb(252, 238, 249));
+  border-radius: var(--nav-link-radius, 5px);
+  margin: 5px;
+  border: 2px solid var(--nav-link-border, rgb(252, 238, 249));
+  color: var(--nav-link-color, #9829f3);
+  font-weight: 500;
+}
+
+/* ==== LOGO ==== */
+.logo {
+  height: 90px;
+  width: auto;
+}
+
+/* #707aff padding: 1rem 0;
+  background: linear-gradient(90deg, #9B5DE5, #F15BB5);
+  background: linear-gradient(90deg, #B084F4, #F9A8D4);*/

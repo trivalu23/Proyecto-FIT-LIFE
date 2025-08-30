@@ -1,0 +1,49 @@
+
+@import url('navegacion.css');
+@import url('mobile-first.css');
+
+:root {
+  --primary: #1fb8cd;
+  --accent: #a1ced4;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --card: #fff;
+  --card-radius: 12px;
+  --muted: #666;
+  --color-titles: rgb(255, 255, 255);
+  --color-subtitles: rgb(214, 214, 214);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../img/fondo 4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background-color: var(--footer-bg, #ceaeff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--footer-link-hover, #ffd580);
+}
+
+footer .bi {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  color: var(--footer-link-hover, #ffd580);
+}
+
+
