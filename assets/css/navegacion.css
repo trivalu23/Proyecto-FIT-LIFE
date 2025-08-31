@@ -1,10 +1,24 @@
 /* ==== NAVBAR ==== */
 .custom-navbar {
-  background: rgba(155, 93, 229, 0.7); /* morado suave con transparencia */
-  backdrop-filter: blur(8px); /* efecto glass */
+  background: linear-gradient(270deg, #feadad, #f8a1f5, #a29bfe, #81c5ec);
+  background-size: 400% 400%;
+  animation: agua 15s ease-in-out infinite;
+
+  /* efecto glass opcional */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0 0 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Animación de agua */
+@keyframes agua {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
+/* ==== LINKS ==== */
 
 .custom-navbar .nav-link {
   font-size: 1.1rem;
@@ -22,10 +36,16 @@
 
 /* ==== LOGO ==== */
 .logo {
-  height: 90px;
+  height: 110px;
   width: auto;
 }
 
+
 /* #707aff padding: 1rem 0;
+
+background-color:#feadad;
+
+background: linear-gradient(90deg, #774ae1, #F7C6B7, #c9d8f2);
+
   background: linear-gradient(90deg, #9B5DE5, #F15BB5);
   background: linear-gradient(90deg, #B084F4, #F9A8D4);*/

@@ -100,7 +100,7 @@
   color: var(--hero-text-color, whitesmoke);
   animation: hero-title-anim 3s ease-in-out infinite alternate;
   z-index: 2;
-  -webkit-text-stroke: 1px var(--hero-stroke, #bf9487);
+  -webkit-text-stroke: 1px var(--hero-stroke, #cccccc);
   text-shadow: 5px 5px 20px rgba(0,0,0,0.5);
 }
 
