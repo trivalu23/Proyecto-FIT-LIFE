@@ -6,24 +6,24 @@
   --accent: #a1ced4;
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   --card: #fff;
-  --radius: 12px;
+  --card-radius: 12px;
   --muted: #666;
-  --color-titulos: rgb(255, 255, 255);
-  --color-subtitulos: rgb(214, 214, 214);
+  --color-titles: rgb(255, 255, 255);
+  --color-subtitles: rgb(214, 214, 214);
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url("../img/fondo 4.png");
+  background-image: url("/assets/img/fondo 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-/* Footer*/
+/* ==== FOOTER ==== */
 footer {
-  background-color: var(--footer-bg, #ceaeff);
+  background-color: #ceaeff;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -32,7 +32,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #ffd580;
+  color: var(--footer-link-hover, #ffd580);
 }
 
 footer .bi {
@@ -42,5 +42,26 @@ footer .bi {
 
 footer .bi:hover {
   transform: scale(1.2);
-  color: #ffd580;
+  color: var(--footer-link-hover, #ffd580);
+}
+
+/*BOTONES DEL MENU*/
+.nav-link {
+  color: var(--color-titles);
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
 }
