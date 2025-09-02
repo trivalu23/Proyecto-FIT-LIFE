@@ -1,6 +1,5 @@
-
-@import url('navegacion.css');
-@import url('mobile-first.css');
+@import url("navegacion.css");
+@import url("mobile-first.css");
 
 :root {
   --primary: #1fb8cd;
@@ -15,7 +14,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('../img/fondo 4.png');
+  background-image: url("../img/fondo 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +24,7 @@ body {
 /* ==== FOOTER ==== */
 footer {
   background-color: var(--footer-bg, #ceaeff);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 footer a {
@@ -46,4 +45,22 @@ footer .bi:hover {
   color: var(--footer-link-hover, #ffd580);
 }
 
-
+/*BOTONES DEL MENU*/
+.nav-link {
+  color: var(--color-titles);
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
