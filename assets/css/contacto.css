@@ -24,7 +24,7 @@
 
 /* Tarjetas de contacto */
 .contact-card {
-  background-color: #d6b2efcb;
+  background-color: var(--color-rosa);
   text-align: center;
   border-radius: 10px;
   padding: 20px;

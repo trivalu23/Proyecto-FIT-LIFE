@@ -15,5 +15,5 @@
 }
 
 .nuestra-historia {
-  background-color: rgba(243, 119, 234, 0.593);
+  background-color: var(--color-rosa);
 }

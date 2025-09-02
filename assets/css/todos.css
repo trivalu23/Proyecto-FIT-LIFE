@@ -1,5 +1,4 @@
 @import url("navegacion.css");
-@import url("mobile-first.css");
 
 :root {
   --primary: #1fb8cd;
@@ -10,6 +9,10 @@
   --muted: #666;
   --color-titulos: rgb(255, 255, 255);
   --color-subtitulos: rgb(214, 214, 214);
+  --color-naranja: #feadad;
+  --color-rosa: #ffc8e0;
+  --color-mora: #a29bfe;
+  --color-azul: #81c5ec;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
 
 /* Footer*/
 footer {
-  background-color: #ceaeff;
+  background-color: var(--color-mora);
   font-family: "Segoe UI", sans-serif;
 }
 
