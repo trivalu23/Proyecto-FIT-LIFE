@@ -52,6 +52,7 @@ footer .bi:hover {
 }
 .nav-link:hover {
   color: var(--primary);
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
 }
 .nav-link::after {
   content: "";
