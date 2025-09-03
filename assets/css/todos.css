@@ -1,5 +1,4 @@
 @import url("navegacion.css");
-@import url("mobile-first.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
@@ -28,9 +27,7 @@ body {
 
 /* Footer*/
 footer {
-  background-color: #ceaeff;
   background-color: var(--color-mora);
-  font-family: "Segoe UI", sans-serif;
 }
 
 footer a {
