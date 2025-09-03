@@ -19,12 +19,12 @@
 }
 
 .contacto h2 {
-  color: rgb(182, 91, 227);
+  color: var(--color-azul);
 }
 
 /* Tarjetas de contacto */
 .contact-card {
-  background-color: #d6b2efcb;
+  background-color: var(--color-rosa);
   text-align: center;
   border-radius: 10px;
   padding: 20px;
@@ -33,7 +33,7 @@
 }
 
 .contact-card h3 {
-  color: rgb(67, 67, 231);
+  color: var(--color-mora);
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
@@ -79,7 +79,7 @@
 .faq h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #4bbaff;
+  color: var(--color-azul);
 }
 
 .faq-container {
@@ -95,7 +95,7 @@
   padding: 20px;
   text-align: center;
   align-items: center;
-  box-shadow: 0 2px 8px #a8d4f0;
+  box-shadow: 0 2px 8px var(--color-rosa);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -106,7 +106,7 @@
 .faq-card h3 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #42acee;
+  color: var(--color-mora);
 }
 
 .faq-card p {

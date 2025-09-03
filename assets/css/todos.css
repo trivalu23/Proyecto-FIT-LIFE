@@ -11,6 +11,10 @@
   --muted: #666;
   --color-titulos: rgb(255, 255, 255);
   --color-subtitulos: rgb(214, 214, 214);
+  --color-naranja: #feadad;
+  --color-rosa: #ffc8e0;
+  --color-mora: #a29bfe;
+  --color-azul: #81c5ec;
 }
 
 body {
@@ -25,6 +29,8 @@ body {
 /* Footer*/
 footer {
   background-color: #ceaeff;
+  background-color: var(--color-mora);
+  font-family: "Segoe UI", sans-serif;
 }
 
 footer a {
@@ -45,10 +51,29 @@ footer .bi:hover {
   color: #ffd580;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-
 h1,
 h2,
 h3 {
   font-family: "Great Vibes", cursive;
+}
+
+/*BOTONES DEL MENU*/
+.nav-link {
+  color: var(--color-titulos);
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
 }
