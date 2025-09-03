@@ -47,3 +47,23 @@ footer .bi:hover {
   transform: scale(1.2);
   color: #ffd580;
 }
+/*BOTONES DEL MENU*/
+.nav-link {
+  color: var(--color-titles);
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño */
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
