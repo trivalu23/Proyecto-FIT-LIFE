@@ -118,3 +118,11 @@
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+}

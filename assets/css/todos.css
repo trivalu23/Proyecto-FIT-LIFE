@@ -1,5 +1,6 @@
 @import url("navegacion.css");
 @import url("mobile-first.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
   --primary: #1fb8cd;
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url("/assets/img/fondo 4.png");
   background-size: cover;
   background-position: center;
@@ -24,7 +25,6 @@ body {
 /* Footer*/
 footer {
   background-color: #ceaeff;
-  font-family: "Segoe UI", sans-serif;
 }
 
 footer a {
@@ -43,4 +43,12 @@ footer .bi {
 footer .bi:hover {
   transform: scale(1.2);
   color: #ffd580;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
 }
