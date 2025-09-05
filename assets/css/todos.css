@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-  --primary: #1fb8cd;
-  --accent: #a1ced4;
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   --card: #fff;
   --radius: 12px;
@@ -18,11 +16,15 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("/assets/img/fondo 4.png");
+  background-image: url("../img/fondo\ 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  /* 👇 Cursor pesita incrustado (no necesitas archivos extras) */
+
+  cursor: url("../img/capibara2.png") 16 16, auto;
 }
 
 /* Footer*/
@@ -60,7 +62,7 @@ h3 {
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--color-azul);
   transform: scale(1.02); /* Aumenta ligeramente el tamaño */
 }
 .nav-link::after {
@@ -68,7 +70,7 @@ h3 {
   display: block;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background: var(--color-azul);
   transition: width 0.3s;
 }
 .nav-link:hover::after {
