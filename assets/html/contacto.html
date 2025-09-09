@@ -124,6 +124,49 @@
     </section>
   </main>
   
+  <!--FORMULARIO DE CONTACTO-->
+  <h1> Formulario de Contacto - FitLife </h1>
+ <form id="formContacto" action="#">
+  <label>Nombre Completo:
+    <input placeholder="Ingrese su nombre completo" 
+    type="text" 
+    id="name" 
+    required>
+  </label>
+
+    <label>Número de teléfono:
+    <input placeholder="Ingrese su número telefonico" 
+    type="tel" 
+    id="phoneNum" 
+    required pattern="[0-9]{9}" 
+    title="Verifique que contenga 9 números"> 
+  </label>
+
+  <label>Correo electrónico:
+    <input placeholder="Ingrese su correo electrónico" 
+    type="email" 
+    id="email" required>
+  </label>
+
+  <label>¿Cual es el motivo de tu contacto?
+    <textarea placeholder="Mi motivo de contacto es..." 
+    id="mensage" 
+    required></textarea>
+  </label>
+
+
+  <label>:¿Cómo deseas que te contactemos?
+    <select id="contact">
+      <option value="WhatsApp">WhatsApp</option>
+      <option value="Telefono">Teléfono</option>
+      <option value="Correo">Gmail</option>
+    
+    </select>
+  </label>
+  
+  <button type="submit">Enviar</button>
+</form>
+<!-- ALERTA --> <script src="../js/script.js"></script> <!--EN DUDA SI ES QUE VA AQUI-->
 
  <!-- Footer -->
   <footer class="text-white pt-4 pb-2 mt-5 text-center">
