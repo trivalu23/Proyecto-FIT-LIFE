@@ -1,8 +1,7 @@
-@import url("navegacion.css");
+@import url("./navegacion.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-  --primary: #1fb8cd;
-  --accent: #a1ced4;
   --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   --card: #fff;
   --radius: 12px;
@@ -16,18 +15,21 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-image: url("/assets/img/fondo 4.png");
+  font-family: "Poppins", sans-serif;
+  background-image: url("../img/fondo 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  /* Cursor capibara*/
+
+  cursor: url("../img/capibara2.png") 16 16, auto;
 }
 
 /* Footer*/
 footer {
   background-color: var(--color-mora);
-  font-family: "Segoe UI", sans-serif;
 }
 
 footer a {
@@ -47,13 +49,20 @@ footer .bi:hover {
   transform: scale(1.2);
   color: #ffd580;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+}
+
 /*BOTONES DEL MENU*/
 .nav-link {
-  color: var(--color-titles);
+  color: var(--color-titulos);
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--color-azul);
   transform: scale(1.02); /* Aumenta ligeramente el tamaño */
 }
 .nav-link::after {
@@ -61,7 +70,7 @@ footer .bi:hover {
   display: block;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background: var(--color-azul);
   transition: width 0.3s;
 }
 .nav-link:hover::after {
