@@ -1,4 +1,4 @@
-@import url("navegacion.css");
+@import url("./navegacion.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
@@ -16,13 +16,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("../img/fondo\ 4.png");
+  background-image: url("../img/fondo 4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  /* 👇 Cursor pesita incrustado (no necesitas archivos extras) */
+  /* Cursor capibara*/
 
   cursor: url("../img/capibara2.png") 16 16, auto;
 }
