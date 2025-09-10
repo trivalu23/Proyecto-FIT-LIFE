@@ -167,3 +167,19 @@
   display: flex;
   flex-direction: column;
 }
+
+/*Botón a servicios */
+
+#goToPage {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--color-naranja);
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#goToPage:hover {
+  background-color: rgb(255, 135, 197);
+}
