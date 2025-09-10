@@ -21,11 +21,3 @@ function calculateIMC() {
     }
   }
 }
-
-// DOM: obtener el botón
-const button = document.getElementById("goToPage");
-
-// Escuchar el clic y redirigir a otra página
-button.addEventListener("click", () => {
-  window.location.href = "./assets/html/formulario-servicios.html";
-});
