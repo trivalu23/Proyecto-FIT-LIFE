@@ -27,5 +27,5 @@ const button = document.getElementById("goToPage");
 
 // Escuchar el clic y redirigir a otra página
 button.addEventListener("click", () => {
-  window.location.href = "../html/formulario-servicios.html";
+  window.location.href = "./assets/html/formulario-servicios.html";
 });
