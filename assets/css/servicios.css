@@ -43,3 +43,32 @@
   box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
   outline: none;
 }
+
+/* --- Botón  --- */
+
+
+
+
+button {
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+#resultado {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #bbf7d0;
+  color: #065f46;
+  font-weight: bold;
+  display: none; /* oculto al inicio */
+}
