@@ -22,28 +22,24 @@
   border-radius: 1rem;
   box-shadow: var(--shadow);
   border: 1px solid rgb(244, 238, 238);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .my-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .my-card h2 {
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  color: rgb(121, 0, 181);
 }
 
-.mission-card,
-.vision-card {
-  background: var(--card);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  border: 1px solid rgb(244, 238, 238);
+.my-card p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 /* Iconos dentro de la tarjeta */
@@ -58,14 +54,6 @@
   object-fit: contain;
 }
 
-/* Textos de las tarjetas */
-.mission-text,
-.vision-text {
-  text-align: justify;
-  line-height: 1.7;
-  font-size: 1rem;
-}
-
 /* Lista de objetivos */
 .vision-goals {
   padding-top: 0.5rem;
@@ -75,13 +63,6 @@
 .vision-goals h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-}
-
-.mission-card:hover,
-.vision-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta {
@@ -110,21 +91,21 @@
 /*Estilos de botones*/
 
 .btn-color-uno {
-  background-color: var(--color-mora);
+  background-color: var(--color-naranja);
   color: #fff;
 }
 
 .btn-color-uno:hover {
-  background-color: #b04ab8;
+  background-color: rgb(255, 135, 197);
 }
 
 .btn-color-dos {
-  background-color: var(--color-azul);
+  background-color: #9bb8eb;
   color: #fff;
 }
 
 .btn-color-dos:hover {
-  background-color: #9bb8eb;
+  background-color: var(--color-azul);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
