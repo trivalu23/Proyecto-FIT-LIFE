@@ -1,0 +1,45 @@
+/* --- Estilos generales del formulario --- */
+.formulario-card {
+  background: #fff;
+  padding: 10px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(18, 24, 40, 0.08);
+  width: 100%;
+  max-width: 400px;
+  margin: 30vh auto;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.formulario-card h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+/* --- Etiquetas --- */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+/* --- Inputs y selects --- */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #dee2e6;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6f42c1; /* color morado (ejemplo) */
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+  outline: none;
+}
