@@ -21,6 +21,7 @@
     <!-- Estilos propios -->
     <link rel="stylesheet" href="../css/todos.css" />
     <link rel="stylesheet" href="../css/inicio.css" />
+    <link rel="stylesheet" href="../css/servicios.css" />
   </head>
 
   <body>
@@ -72,20 +73,61 @@
       </nav>
     </header>
 
-    <div>
-      <!-- AQUI HAREMOS EL FORMULARIO DE SERVICIOSSS
-        
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       -->
+    <!-- AQUI HAREMOS EL FORMULARIO DE SERVICIOSSS-->
+
+    <div class="d-flex justify-content-center align-items-center min-vh-80">
+      <div class="formulario-card">
+        <h2>Inscripción</h2>
+        <form id="signup-parte1" autocomplete="on">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="edad" class="form-label">Edad</label>
+            <input
+              type="number"
+              class="form-control"
+              id="edad"
+              name="edad"
+              min="10"
+              max="120"
+              placeholder="Ej: 23"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="genero" class="form-label">Género</label>
+            <select id="genero" name="genero" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+              <option value="otro">Otro</option>
+              <option value="prefiero_no_decir">Prefiero no decir</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="plan" class="form-label">Selecciona plan</label>
+            <select id="plan" name="plan" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="basico">Básico (2x semana)</option>
+              <option value="estandar">Estándar (3x semana)</option>
+              <option value="intensivo">Intensivo (5x semana)</option>
+              <option value="online">Online</option>
+            </select>
+          </div>
+        </form>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -153,7 +195,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="../js/script.js"></script>
+    <script src="../js/formulario.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
