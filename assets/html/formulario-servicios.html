@@ -126,9 +126,66 @@
               <option value="online">Online</option>
             </select>
           </div>
+
+             <div class="mb-3">
+            <label for="duración" class="form-label">Duración del plan</label>
+            <select id="duración" name="duración" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="1_mes">1 mes</option>
+              <option value="3_meses">3 meses</option>
+              <option value="6_meses">6 meses</option>
+              <option value="12_meses">12 meses</option>
+              <option value="indefinido">Indefinido</option>
+            </select>
+                </div>
+
+                <div class="mb-3">
+            <label for="objetivo" class="form-label">Objetivo principal</label>
+            <select id="objetivo" name="objetivo" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="perder_peso">Perder peso</option>
+              <option value="ganar_musculo">Ganar músculo</option>
+              <option value="mejorar_resistencia">Mejorar resistencia</option>
+              <option value="mantener_salud">Mantener salud</option>
+              <option value="otro">Otro</option>
+            </select>
+                </div>
+              
+          <div class="mb-3">
+            <label for="condicion" class="form-label">Condición física</label>
+            <select id="condicion" name="condicion" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="principiante">Principiante</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+              <option value="atleta">Atleta</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="preferencias" class="form-label">Preferencias de entrenamiento</label>
+            <select id="preferencias" name="preferencias" class="form-select" required>
+              <option value="">-- Selecciona --</option>
+              <option value="cardio">Cardio</option>
+              <option value="fuerza">Fuerza</option>
+              <option value="flexibilidad">Flexibilidad</option>
+              <option value="mixto">Mixto</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+ 
+    <div class="card">
+      
+      <button id="btnCalcular">¡Consigue tu plan ya ✨ !</button>
+      
+      <!-- Aquí aparecerá el resultado -->
+      <div id="resultado"></div>
+    </div>
         </form>
       </div>
     </div>
+  
 
     <!-- Footer -->
     <footer class="text-white pt-4 pb-2 mt-5 text-center">
