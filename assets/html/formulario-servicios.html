@@ -72,6 +72,41 @@
         </div>
       </nav>
     </header>
+    <!-- FIN HEADER -->
+    <div
+      class="card3d col-12 col-md-8 col-lg-8 mx-auto d-flex flex-column justify-content-center align-items-center text-white"
+    >
+      <!-- Texto permanente en la parte morada -->
+      <div class="z-0">
+        <h2 class="fw-bold text-center px-4 py-4">
+          Regístrate y accede a rutinas, planes y consejos exclusivos
+        </h2>
+      </div>
+      <div class="d-flex justify-content-center gap-lg-5 gap-3 mx-lg-5 px-lg-5">
+        <img
+          src="../img/final capi.png"
+          alt="Capibara inscribiéndose"
+          class="capibara-img mb-3"
+        />
+        <img
+          src="../img/final2.png"
+          alt="Capibara inscribiéndose"
+          class="capibara-img mb-3"
+        />
+        <img
+          src="../img/final3.png"
+          alt="Capibara inscribiéndose"
+          class="capibara-img mb-3"
+        />
+      </div>
+
+      <!-- Texto en la parte rosa (desaparece con la animación) -->
+      <div
+        class="overlay d-flex justify-content-center align-items-center flex-column"
+      >
+        <h3 class="fw-bold letra">🌟¡Únete ahora!🌟</h3>
+      </div>
+    </div>
 
     <!-- AQUI HAREMOS EL FORMULARIO DE SERVICIOSSS-->
 
@@ -127,7 +162,7 @@
             </select>
           </div>
 
-             <div class="mb-3">
+          <div class="mb-3">
             <label for="duración" class="form-label">Duración del plan</label>
             <select id="duración" name="duración" class="form-select" required>
               <option value="">-- Selecciona --</option>
@@ -137,9 +172,9 @@
               <option value="12_meses">12 meses</option>
               <option value="indefinido">Indefinido</option>
             </select>
-                </div>
+          </div>
 
-                <div class="mb-3">
+          <div class="mb-3">
             <label for="objetivo" class="form-label">Objetivo principal</label>
             <select id="objetivo" name="objetivo" class="form-select" required>
               <option value="">-- Selecciona --</option>
@@ -149,11 +184,16 @@
               <option value="mantener_salud">Mantener salud</option>
               <option value="otro">Otro</option>
             </select>
-                </div>
-              
+          </div>
+
           <div class="mb-3">
             <label for="condicion" class="form-label">Condición física</label>
-            <select id="condicion" name="condicion" class="form-select" required>
+            <select
+              id="condicion"
+              name="condicion"
+              class="form-select"
+              required
+            >
               <option value="">-- Selecciona --</option>
               <option value="principiante">Principiante</option>
               <option value="intermedio">Intermedio</option>
@@ -164,8 +204,15 @@
           </div>
 
           <div class="mb-3">
-            <label for="preferencias" class="form-label">Preferencias de entrenamiento</label>
-            <select id="preferencias" name="preferencias" class="form-select" required>
+            <label for="preferencias" class="form-label"
+              >Preferencias de entrenamiento</label
+            >
+            <select
+              id="preferencias"
+              name="preferencias"
+              class="form-select"
+              required
+            >
               <option value="">-- Selecciona --</option>
               <option value="cardio">Cardio</option>
               <option value="fuerza">Fuerza</option>
@@ -174,18 +221,16 @@
               <option value="otro">Otro</option>
             </select>
           </div>
- 
-    <div class="card">
-      
-      <button id="btnCalcular">¡Consigue tu plan ya ✨ !</button>
-      
-      <!-- Aquí aparecerá el resultado -->
-      <div id="resultado"></div>
-    </div>
+
+          <div class="card">
+            <button id="btnCalcular">¡Consigue tu plan ya ✨ !</button>
+
+            <!-- Aquí aparecerá el resultado -->
+            <div id="resultado"></div>
+          </div>
         </form>
       </div>
     </div>
-  
 
     <!-- Footer -->
     <footer class="text-white pt-4 pb-2 mt-5 text-center">
