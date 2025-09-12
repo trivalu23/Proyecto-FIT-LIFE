@@ -1,4 +1,4 @@
-/* ==== SECCIÓN HERO ==== */
+/* SECCIÓN HERO */
 .hero {
   padding: 120px 20px 60px;
   background: linear-gradient(135deg, #bc8cef 0%, #96b9f6 100%);
@@ -12,7 +12,7 @@
   color: var(--color-subtitulos);
 }
 
-/* ==== SECCIÓN CONTACTO ==== */
+/* SECCION CONTACTO */
 .contacto {
   padding: 50px 20px;
   background-color: #5fa0e200;
@@ -20,6 +20,14 @@
 
 .contacto h2 {
   color: var(--color-azul);
+}
+
+.subtitulo-seccion {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-azul);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Tarjetas de contacto */
@@ -56,7 +64,7 @@
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ==== ANIMACIONES ==== */
+/* Animaciones */
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.8s forwards;
@@ -74,12 +82,6 @@
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
-}
-
-.faq h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: var(--color-azul);
 }
 
 .faq-container {
@@ -128,13 +130,7 @@ h3 {
   font-family: "Great Vibes", cursive;
 }
 
-/* ==== FORMULARIO DE CONTACTO ==== */
-.titulo-form {
-  text-align: center;
-  color: var(--color-azul);
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
+/* Formulario de Contacto */
 
 #formContacto {
   background: #fff;
@@ -147,13 +143,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-}
-
-#formContacto h1 {
-  text-align: center;
-  color: var(--color-azul);
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
 }
 
 #formContacto label {
