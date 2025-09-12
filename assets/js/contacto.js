@@ -8,5 +8,9 @@ document
     const mensage = document.getElementById("mensage").value;
     const contact = document.getElementById("contact").value;
 
-    // Validaciones básicas
+    // Aquí puedes agregar la lógica para enviar los datos del formulario
+    console.log({ username, phoneNum, email, mensage, contact });
+    alert("Formulario enviado. ¡Gracias por contactarnos!");
+    // Reinicia el formulario después de enviarlo
+    document.getElementById("formContacto").reset();
   });
