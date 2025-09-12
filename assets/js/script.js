@@ -29,3 +29,5 @@ const button = document.getElementById("goToPage");
 button.addEventListener("click", () => {
   window.location.href = "./assets/html/formulario-servicios.html";
 });
+
+
