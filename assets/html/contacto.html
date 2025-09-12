@@ -75,9 +75,9 @@
 
       <section class="contacto">
         <div class="container">
-          <h1 class="subtitulo-seccion">
+          <h2 class="subtitulo-seccion">
             Maneras de ponerte en contacto con nosotros
-          </h1>
+          </h2>
 
           <div class="row g-4">
             <article class="col-12 col-md-6 col-lg-4">
@@ -147,6 +147,7 @@
               acuerdo con tus necesidades y objetivos personales.
             </p>
           </div>
+
           <div class="faq-card">
             <h3>📱 ¿Puedo acceder desde mi celular?</h3>
             <p>
@@ -167,7 +168,7 @@
             <h3>🕒 ¿Cuánto tiempo tardaré en ver resultados?</h3>
             <p>
               Todo dependerá de tu constancia. Con disciplina y acompañamiento,
-              notarás cambios positivos en tus hábitos físicos, emocionales y de
+              notarás cambios positivos en tus hábitos fisicos, emocionales y de
               alimentación desde las primeras semanas.
             </p>
           </div>
@@ -181,66 +182,68 @@
           </div>
         </div>
       </section>
+
+      <!--FORMULARIO DE CONTACTO-->
+      <section class="formulario">
+        <h1 class="subtitulo-seccion">Formulario de Contacto</h1>
+        <form id="formContacto" action="#">
+          <label for="username"
+            >Nombre completo:
+            <input
+              placeholder="Ingrese su nombre completo"
+              type="text"
+              id="username"
+              required
+            />
+          </label>
+
+          <label for="phoneNum"
+            >Número de teléfono:
+            <input
+              placeholder="Ingrese su número telefonico"
+              type="tel"
+              id="phoneNum"
+              required
+              pattern="[0-9]{9}"
+              title="Verifique que contenga 9 números"
+            />
+          </label>
+
+          <label for="email"
+            >Correo electrónico:
+            <input
+              placeholder="Ingrese su correo electrónico"
+              type="email"
+              id="email"
+              required
+            />
+          </label>
+
+          <label for="mensage"
+            >¿Cuál es el motivo de tu contacto?
+            <textarea
+              placeholder="Mi motivo de contacto es..."
+              id="mensage"
+              required
+            ></textarea>
+          </label>
+
+          <label
+            >¿Cómo deseas que te contactemos?
+            <select id="contact">
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Telefono">Teléfono</option>
+              <option value="Correo">Gmail</option>
+            </select>
+          </label>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <!-- ALERTA -->
+        <script src="../js/script.js"></script>
+        <!--EN DUDA SI ES QUE VA AQUI-->
+      </section>
     </main>
-
-    <!--FORMULARIO DE CONTACTO-->
-    <h1 class="subtitulo-seccion">Formulario de Contacto</h1>
-    <form id="formContacto" action="#">
-      <label
-        >Nombre completo:
-        <input
-          placeholder="Ingrese su nombre completo"
-          type="text"
-          id="name"
-          required
-        />
-      </label>
-
-      <label
-        >Número de teléfono:
-        <input
-          placeholder="Ingrese su número telefonico"
-          type="tel"
-          id="phoneNum"
-          required
-          pattern="[0-9]{9}"
-          title="Verifique que contenga 9 números"
-        />
-      </label>
-
-      <label
-        >Correo electrónico:
-        <input
-          placeholder="Ingrese su correo electrónico"
-          type="email"
-          id="email"
-          required
-        />
-      </label>
-
-      <label
-        >¿Cuál es el motivo de tu contacto?
-        <textarea
-          placeholder="Mi motivo de contacto es..."
-          id="mensage"
-          required
-        ></textarea>
-      </label>
-
-      <label
-        >¿Cómo deseas que te contactemos?
-        <select id="contact">
-          <option value="WhatsApp">WhatsApp</option>
-          <option value="Telefono">Teléfono</option>
-          <option value="Correo">Gmail</option>
-        </select>
-      </label>
-
-      <button type="submit">Enviar</button>
-    </form>
-    <!-- ALERTA -->
-    <script src="../js/script.js"></script>
-    <!--EN DUDA SI ES QUE VA AQUI-->
 
     <!-- Footer -->
     <footer class="text-white pt-4 pb-2 mt-5 text-center">
@@ -305,7 +308,10 @@
       </div>
     </footer>
 
+    <script src="../js/contacto.js"></script>
+
     <!-- Iconos de Bootstrap -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
