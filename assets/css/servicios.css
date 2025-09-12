@@ -47,7 +47,7 @@
 /* --- Botón  --- */
 
 button {
-  background: #22c55e;
+  background: #e0bcf8;
   color: white;
   font-weight: bold;
   border: none;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-  background: #16a34a;
+  background: #faa3bd;
 }
 
 #resultado {

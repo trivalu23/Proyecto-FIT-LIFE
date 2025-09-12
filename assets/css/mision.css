@@ -55,16 +55,20 @@
 }
 
 /* Lista de objetivos */
+.mision-goals,
 .vision-goals {
   padding-top: 0.5rem;
   text-align: left;
 }
 
-.vision-goals h3 {
+.vision-goals h3,
+.mision-goals h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: var(--color-mora);
 }
 
+/*Call to Action*/
 .cta {
   background: var(--color-rosa);
   padding: 30px 20px;
@@ -96,7 +100,7 @@
 }
 
 .btn-color-uno:hover {
-  background-color: rgb(255, 135, 197);
+  background-color: rgb(255, 120, 190);
 }
 
 .btn-color-dos {
