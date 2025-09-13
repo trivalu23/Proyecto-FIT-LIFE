@@ -2,7 +2,7 @@
 .custom-navbar {
   background: linear-gradient(270deg, #feadad, #ffc8e0, #a29bfe, #81c5ec);
   background-size: 400% 400%;
-  animation: agua 12s ease-in-out infinite;
+  animation: agua 10s ease-in-out infinite;
 
   /* efecto glass opcional */
   backdrop-filter: blur(12px);
