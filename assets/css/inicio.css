@@ -170,9 +170,9 @@
 
 /*Botón a servicios */
 
-#goToPage {
-  padding: 10px 20px;
-  font-size: 16px;
+.goToPage {
+  padding: 20px 26px;
+  font-size: 20px;
   border: none;
   background-color: var(--color-naranja);
   color: whitesmoke;
@@ -180,6 +180,6 @@
   border-radius: 8px;
 }
 
-#goToPage:hover {
+.goToPage:hover {
   background-color: rgb(255, 135, 197);
 }
