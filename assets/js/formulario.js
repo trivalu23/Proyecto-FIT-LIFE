@@ -46,9 +46,9 @@ const descuentos = {
   "12_meses": 0.3   // 30%
 };
 
-// =====================
+
 // Función calcular precio
-// =====================
+
 function calcularPrecio(plan, duracion) {
   let precioMensual = precios[plan];
   if (!precioMensual) return null; 
@@ -77,9 +77,9 @@ function calcularPrecio(plan, duracion) {
   };
 }
 
-// =====================
+
 // Función principal
-// =====================
+
 function calcularPlan() {
   const nombre = document.getElementById("nombre")?.value.trim() || "";
   const edad = document.getElementById("edad")?.value || "";
@@ -168,9 +168,9 @@ function calcularPlan() {
   }
 }
 
-// =====================
+
 // Evento al botón
-// =====================
+
 document.getElementById("btnCalcular").addEventListener("click", function (e) {
   e.preventDefault(); 
   calcularPlan();
