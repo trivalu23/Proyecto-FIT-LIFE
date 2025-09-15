@@ -30,28 +30,26 @@ class MemberPart1 {
   }
 }
 
-
 // Datos base
 
 const precios = {
   basico: 80,
   estandar: 150,
   intensivo: 200,
-  online: 50
+  online: 50,
 };
 
 const descuentos = {
-  "3_meses": 0.1,   // 10%
-  "6_meses": 0.2,   // 20%
-  "12_meses": 0.3   // 30%
+  "3_meses": 0.1, // 10%
+  "6_meses": 0.2, // 20%
+  "12_meses": 0.3, // 30%
 };
 
-// =====================
 // Función calcular precio
-// =====================
+
 function calcularPrecio(plan, duracion) {
   let precioMensual = precios[plan];
-  if (!precioMensual) return null; 
+  if (!precioMensual) return null;
 
   // Duración en meses
   let meses = 1;
@@ -64,7 +62,13 @@ function calcularPrecio(plan, duracion) {
   let total = subtotal;
 
   // descuentos planes cada 3,6 y 12 meses
-  if (( plan=== "basico"||  plan === "estandar" || plan === "intensivo" || plan === "online" ) && descuentos[duracion]) {
+  if (
+    (plan === "basico" ||
+      plan === "estandar" ||
+      plan === "intensivo" ||
+      plan === "online") &&
+    descuentos[duracion]
+  ) {
     descuento = subtotal * descuentos[duracion];
     total = subtotal - descuento;
   }
@@ -73,13 +77,12 @@ function calcularPrecio(plan, duracion) {
     subtotal,
     descuento,
     total,
-    meses
+    meses,
   };
 }
 
-// =====================
 // Función principal
-// =====================
+
 function calcularPlan() {
   const nombre = document.getElementById("nombre")?.value.trim() || "";
   const edad = document.getElementById("edad")?.value || "";
@@ -93,18 +96,27 @@ function calcularPlan() {
   const mensaje = document.getElementById("mensaje");
 
   // Validaciones
-  if (!nombre || !edad || !genero || !plan || !duracion || !objetivo || !condicion || !preferencias) {
+  if (
+    !nombre ||
+    !edad ||
+    !genero ||
+    !plan ||
+    !duracion ||
+    !objetivo ||
+    !condicion ||
+    !preferencias
+  ) {
     mensaje.style.display = "block";
-    mensaje.style.background = "#fecaca"; 
-    mensaje.style.color = "#991b1b";      
+    mensaje.style.background = "#fecaca";
+    mensaje.style.color = "#991b1b";
     mensaje.innerHTML = "⚠️ Por favor, completa todos los campos.";
     return;
   }
 
   if (edad < 18) {
     mensaje.style.display = "block";
-    mensaje.style.background = "#fef3c7"; 
-    mensaje.style.color = "#92400e";     
+    mensaje.style.background = "#fef3c7";
+    mensaje.style.color = "#92400e";
     mensaje.innerHTML = "⚠️ La edad mínima para inscribirse es 18 años.";
     return;
   }
@@ -116,23 +128,27 @@ function calcularPlan() {
   let descripcionPlan = "";
   switch (plan) {
     case "basico":
-      descripcionPlan = "✔️ El plan Básico incluye 2 entrenamientos por semana, (2h cada entrenamiento),de manera Presencial";
+      descripcionPlan =
+        "✔️ El plan Básico incluye 2 entrenamientos por semana, (2h cada entrenamiento),de manera Presencial";
       break;
     case "estandar":
-      descripcionPlan = "✔️ El plan Estándar incluye 3 entrenamientos por semana, (2h cada  entrenamiento) ,monitoreo semanal e incluye recetario de recetas saludables,de manera Presencial";
+      descripcionPlan =
+        "✔️ El plan Estándar incluye 3 entrenamientos por semana, (2h cada  entrenamiento) ,monitoreo semanal e incluye recetario de recetas saludables,de manera Presencial";
       break;
     case "intensivo":
-      descripcionPlan = "✔️ El plan Intensivo incluye 5 entrenamientos por semana (2h cada entrenamiento), monitoreo semanal, coach personalizado y recetario de comidas saludables,de manera Presencial.";
+      descripcionPlan =
+        "✔️ El plan Intensivo incluye 5 entrenamientos por semana (2h cada entrenamiento), monitoreo semanal, coach personalizado y recetario de comidas saludables,de manera Presencial.";
       break;
     case "online":
-      descripcionPlan = "✔️ El plan Online incluye 2 entrenamientos por semana (2h cada entrenamiento), clases grabadas, asesorías virtuales y acceso a la comunidad online.";
+      descripcionPlan =
+        "✔️ El plan Online incluye 2 entrenamientos por semana (2h cada entrenamiento), clases grabadas, asesorías virtuales y acceso a la comunidad online.";
       break;
   }
 
   // Mostrar mensaje
   mensaje.style.display = "block";
   mensaje.style.background = "rgba(250, 218, 237, 1)";
-  mensaje.style.color = "#000";      
+  mensaje.style.color = "#000";
 
   // Si tiene descuento, mostrar original y con descuento
   if (resultado.descuento > 0) {
@@ -143,7 +159,9 @@ function calcularPlan() {
       🔹 Condición física: ${condicion}<br>
       🔹 Preferencia de entrenamiento: ${preferencias}<br><br>
 
-      ✅ <b>Plan elegido:</b> ${plan.toUpperCase()} por ${resultado.meses} mes(es).<br>
+      ✅ <b>Plan elegido:</b> ${plan.toUpperCase()} por ${
+      resultado.meses
+    } mes(es).<br>
       ${descripcionPlan}<br><br>
 
       💵 Precio original: <s>S/ ${resultado.subtotal.toFixed(2)}</s><br>
@@ -159,7 +177,9 @@ function calcularPlan() {
       🔹 Condición física: ${condicion}<br>
       🔹 Preferencia de entrenamiento: ${preferencias}<br><br>
 
-      ✅ <b>Plan elegido:</b> ${plan.toUpperCase()} por ${resultado.meses} mes(es).<br>
+      ✅ <b>Plan elegido:</b> ${plan.toUpperCase()} por ${
+      resultado.meses
+    } mes(es).<br>
       ${descripcionPlan}<br><br>
 
       💰 <b>Precio total: S/ ${resultado.subtotal.toFixed(2)}</b><br>
@@ -168,10 +188,9 @@ function calcularPlan() {
   }
 }
 
-// =====================
 // Evento al botón
-// =====================
+
 document.getElementById("btnCalcular").addEventListener("click", function (e) {
-  e.preventDefault(); 
+  e.preventDefault();
   calcularPlan();
 });

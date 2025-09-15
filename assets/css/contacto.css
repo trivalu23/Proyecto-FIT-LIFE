@@ -193,3 +193,9 @@ h3 {
 #formContacto button:hover {
   background-color: var(--color-mora);
 }
+
+.mensaje-error {
+  color: red;
+  font-size: 0.9em; /* Un poquito más pequeño que el texto normal */
+  margin-top: 5px; /* Un espacio entre el input y el mensaje */
+}
